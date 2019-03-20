@@ -14,6 +14,11 @@
 		034B9C042241E1BB000E1713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034B9C022241E1BB000E1713 /* LaunchScreen.storyboard */; };
 		034B9C0F2241E1BB000E1713 /* BroadcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C0E2241E1BB000E1713 /* BroadcastTests.swift */; };
 		034B9C1A2241E1BB000E1713 /* BroadcastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C192241E1BB000E1713 /* BroadcastUITests.swift */; };
+		034B9C282241E1DD000E1713 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C272241E1DD000E1713 /* Singleton.swift */; };
+		034B9C2A2241E41B000E1713 /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C292241E41B000E1713 /* LeftView.swift */; };
+		034B9C2C2241E42D000E1713 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C2B2241E42D000E1713 /* RightView.swift */; };
+		034B9C2F2241E70B000E1713 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034B9C2D2241E70B000E1713 /* NextViewController.swift */; };
+		034B9C302241E70B000E1713 /* NextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034B9C2E2241E70B000E1713 /* NextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		034B9C152241E1BB000E1713 /* BroadcastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BroadcastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		034B9C192241E1BB000E1713 /* BroadcastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastUITests.swift; sourceTree = "<group>"; };
 		034B9C1B2241E1BB000E1713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034B9C272241E1DD000E1713 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		034B9C292241E41B000E1713 /* LeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
+		034B9C2B2241E42D000E1713 /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
+		034B9C2D2241E70B000E1713 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		034B9C2E2241E70B000E1713 /* NextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +108,12 @@
 			isa = PBXGroup;
 			children = (
 				034B9BF92241E1BA000E1713 /* AppDelegate.swift */,
+				034B9C272241E1DD000E1713 /* Singleton.swift */,
+				034B9C292241E41B000E1713 /* LeftView.swift */,
+				034B9C2B2241E42D000E1713 /* RightView.swift */,
 				034B9BFB2241E1BA000E1713 /* ViewController.swift */,
+				034B9C2D2241E70B000E1713 /* NextViewController.swift */,
+				034B9C2E2241E70B000E1713 /* NextViewController.xib */,
 				034B9BFD2241E1BA000E1713 /* Main.storyboard */,
 				034B9C002241E1BB000E1713 /* Assets.xcassets */,
 				034B9C022241E1BB000E1713 /* LaunchScreen.storyboard */,
@@ -230,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				034B9C042241E1BB000E1713 /* LaunchScreen.storyboard in Resources */,
+				034B9C302241E70B000E1713 /* NextViewController.xib in Resources */,
 				034B9C012241E1BB000E1713 /* Assets.xcassets in Resources */,
 				034B9BFF2241E1BA000E1713 /* Main.storyboard in Resources */,
 			);
@@ -257,7 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				034B9BFC2241E1BA000E1713 /* ViewController.swift in Sources */,
+				034B9C2F2241E70B000E1713 /* NextViewController.swift in Sources */,
+				034B9C282241E1DD000E1713 /* Singleton.swift in Sources */,
+				034B9C2C2241E42D000E1713 /* RightView.swift in Sources */,
 				034B9BFA2241E1BA000E1713 /* AppDelegate.swift in Sources */,
+				034B9C2A2241E41B000E1713 /* LeftView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZB8FR9L33J;
+				DEVELOPMENT_TEAM = 4DQ536BRDY;
 				INFOPLIST_FILE = Broadcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZB8FR9L33J;
+				DEVELOPMENT_TEAM = 4DQ536BRDY;
 				INFOPLIST_FILE = Broadcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
